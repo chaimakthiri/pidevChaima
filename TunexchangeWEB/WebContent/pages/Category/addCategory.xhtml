@@ -1,0 +1,55 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/templates/template.xhtml">
+	<ui:define name="AddCategory">
+		<h:form>
+			<h:panelGrid>
+				<h:dataTable value="#{GestionCategoryBean.categories}" var="neww"
+					border="2">
+
+					<h:column>
+						<f:facet name="header">
+							<h:outputText value="Nom" />
+						</f:facet>
+						<h:outputText value="#{neww.nameCategory}" />
+					</h:column>
+
+					<h:column>
+						<h:commandButton value="edit">
+							<f:setPropertyActionListener
+								target="#{GestionCategoryBean.category}" value="#{neww}"></f:setPropertyActionListener>
+							<f:setPropertyActionListener target="#{GestionCategoryBean.form}"
+								value="true"></f:setPropertyActionListener>
+						</h:commandButton>
+						<h:commandButton value="delete"
+							action="#{GestionCategoryBean.delete()}">
+							<f:setPropertyActionListener
+								target="#{GestionCategoryBean.category}" value="#{neww}"></f:setPropertyActionListener>
+						</h:commandButton>
+					</h:column>
+				</h:dataTable>
+				<h:commandButton value="new"
+					action="#{GestionCategoryBean.newCategory()}" />
+			</h:panelGrid>
+		</h:form>
+		<h:form rendered="#{GestionCategoryBean.form}">
+			<h:panelGrid columns="1">
+				<h:outputText value="Nom" />
+				<h:inputText id="name"
+					value="#{GestionCategoryBean.category.nameCategory}"
+					required="true" requiredMessage="input required">
+					<f:ajax event="blur" render="mname"></f:ajax>
+				</h:inputText>
+				<h:message for="name" id="mname" />
+				<h:commandButton value="Validate"
+					action="#{GestionCategoryBean.validate()}" />
+
+			</h:panelGrid>
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>

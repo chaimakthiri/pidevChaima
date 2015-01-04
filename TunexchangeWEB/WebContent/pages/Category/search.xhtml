@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head></h:head>
+<body>
+	<h1>please enter the id or the name of the category choosen</h1>
+	<h:form id="form">
+		<h:panelGrid columns="3">
+			<h:outputText value="CategoryId">category id</h:outputText>
+			<h:inputText value="#{GestionCategoryBean.idOfCategorySelected}"></h:inputText>
+			<h:commandButton action="#{GestionCategoryBean.init()}" value="by id" />
+			<h:outputText value="CategoryName">category name</h:outputText>
+			<h:inputText
+				value="#{GestionCategoryBean.categorySelected.nameCategory}"></h:inputText>
+				<h:commandButton
+			action="#{GestionCategoryBean.doFindServicesByCategoryName()}"
+			value="by name" />
+		</h:panelGrid>
+		
+		
+
+
+		<h:dataTable value="#{GestionCategoryBean.services}" var="s"
+			border="2">
+			<h:column>
+				<f:facet name="header">
+					<h:outputText value="description of service" />
+				</f:facet>
+				<h:outputText value="#{s.description}" />
+			</h:column>
+
+
+
+
+
+		</h:dataTable>
+	</h:form>
+</body>
+</html>

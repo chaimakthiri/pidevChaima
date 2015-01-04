@@ -1,0 +1,81 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/templates/template.xhtml"> 
+	
+	<ui:define name="manageAdmin">
+	
+	
+				<header class="page-header">
+				
+						<h2>Editable Tables</h2>
+					
+						<div class="right-wrapper pull-right">
+							<ol class="breadcrumbs">
+								<li>
+									<a href="index-2.html">
+										<i class="fa fa-home"></i>
+									</a>
+								</li>
+								<li><span>Tables</span></li>
+								<li><span>Editable</span></li>
+							</ol>
+					
+							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
+						</div>
+					</header>
+
+					<!-- start: page -->
+					
+						
+						<section class="panel">
+							<header class="panel-heading">
+								<div class="panel-actions">
+									<a href="#" class="fa fa-caret-down"></a>
+									<a href="#" class="fa fa-times"></a>
+								</div>
+						
+								<h2 class="panel-title">Manage administrator</h2>
+							</header>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="mb-md">
+											<button id="addToTable" class="btn btn-primary">Add <i class="fa fa-plus"></i></button>
+										</div>
+									</div>
+								</div>
+								<table class="table table-bordered table-striped mb-none" id="datatable-editable">
+									
+									<tbody>
+										<tr class="gradeX">
+											<td>youssef</td>
+											<td>ben messaoud
+											</td>
+											<td>youssef@esprit.tn</td>
+											<td>djosefils</td>
+											<td >0000</td>
+											<td>21694995</td>
+											<td class="actions">
+												<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+												<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+												<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+											</td>
+										</tr>
+										</tbody>
+										</table>
+										</div>
+										</section>
+										
+										
+									
+										
+										
+	
+	
+	
+	</ui:define>
+	
+	</ui:composition>

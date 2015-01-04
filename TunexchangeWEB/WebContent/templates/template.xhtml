@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+
+	<!-- Basic -->
+	 <f:facet name="first">
+	<meta charset="UTF-8" />
+
+	<title>Dashboard | Porto Admin - Responsive HTML5 Template
+		1.3.0</title>
+	<meta name="keywords" content="HTML5 Admin Template" />
+	<meta name="description"
+		content="Porto Admin - Responsive HTML5 Template" />
+	<meta name="author" content="okler.net" />
+
+	<!-- Mobile Metas -->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</f:facet>
+	<!-- Web Fonts  -->
+	<f:facet name="middle">
+	<h:outputScript
+		name="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light"
+		rel="stylesheet" type="text/css" />
+
+	<!-- Vendor CSS -->
+	<h:outputStylesheet  name="vendor/bootstrap/css/bootstrap.css" />
+	<h:outputStylesheet 
+		name="vendor/font-awesome/css/font-awesome.css" />
+	<h:outputStylesheet 
+		name="vendor/magnific-popup/magnific-popup.css" />
+	<h:outputStylesheet 
+		name="vendor/bootstrap-datepicker/css/datepicker3.css" />
+		
+		<!-- Specific Page Vendor CSS -->	
+			<h:outputStylesheet name="vendor/select2/select2.css" />	
+		<h:outputStylesheet  name="vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+		
+		
+
+	<!-- Specific Page Vendor CSS -->
+	<h:outputStylesheet 
+		name="vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+	<h:outputStylesheet 
+		name="vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+	<h:outputStylesheet  name="vendor/morris/morris.css" />
+
+	<!-- Theme CSS -->
+	<h:outputStylesheet  name="stylesheets/theme.css" />
+
+	<!-- Theme Custom CSS -->
+	<h:outputStylesheet  name="stylesheets/theme-custom.css" />
+
+	<!-- Head Libs -->
+	<h:outputScript  name="vendor/modernizr/modernizr.js"/>
+	</f:facet>
+	
+</h:head>
+
+<body>
+
+	
+
+	<ui:include src="/templates/header.xhtml" />
+<div class="inner-wrapper">	
+	<ui:include src="/templates/leftMenue.xhtml" />
+    
+	<section role="main" class="content-body">
+		
+	<ui:insert name="profile"></ui:insert>
+	<ui:insert name="manageAdmin"></ui:insert>
+	<ui:insert name="homePage"></ui:insert>
+	<ui:insert name="ShowService"></ui:insert>
+	<ui:insert name="AddCategory"></ui:insert>
+	</section>
+	</div>
+</body>
+	<!-- Vendor -->
+	<h:outputScript  name="vendor/jquery/jquery.js"/>
+	<h:outputScript 
+		name="vendor/jquery-browser-mobile/jquery.browser.mobile.js"/>
+	<h:outputScript   name="vendor/jquery-cookie/jquery.cookie.js"/>
+	<h:outputScript  name="assets/vendor/style-switcher/style.switcher.js"/>
+	<h:outputScript   name="vendor/bootstrap/js/bootstrap.js"/>
+	<h:outputScript  name="vendor/nanoscroller/nanoscroller.js"/>
+	<h:outputScript 
+		name="vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"/>
+	<h:outputScript  name="vendor/magnific-popup/magnific-popup.js"/>
+	<h:outputScript  name="vendor/jquery-placeholder/jquery.placeholder.js"/>
+
+	<!-- Specific Page Vendor -->
+	<h:outputScript  name="vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"/>
+	<h:outputScript 
+		name="vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"/>
+	<h:outputScript  name="vendor/jquery-appear/jquery.appear.js"/>
+	<h:outputScript 
+		name="vendor/bootstrap-multiselect/bootstrap-multiselect.js"/>
+	<h:outputScript  name="vendor/jquery-easypiechart/jquery.easypiechart.js"/>
+	<h:outputScript  name="vendor/flot/jquery.flot.js"/>
+	<h:outputScript  name="vendor/flot-tooltip/jquery.flot.tooltip.js"/>
+	<h:outputScript  name="vendor/flot/jquery.flot.pie.js"/>
+	<h:outputScript  name="vendor/fjslot/jquery.flot.categories.js"/>
+	<h:outputScript  name="vendor/flot/jquery.flot.resize.js"/>
+	<h:outputScript  name="vendor/jquery-sparkline/jquery.sparkline.js"/>
+	<h:outputScript  name="vendor/raphael/raphael.js"/>
+	<h:outputScript  name="vendor/morris/morris.js"/>
+	<h:outputScript  name="vendor/gauge/gauge.js"/>
+	<h:outputScript  name="vendor/snap-svg/snap.svg.js"/>
+	<h:outputScript  name="vendor/liquid-meter/liquid.meter.js"/>
+	<h:outputScript  name="vendor/jqvmap/jquery.vmap.js"/>
+	<h:outputScript  name="vendor/jqvmap/data/jquery.vmap.sampledata.js"/>
+	<h:outputScript  name="vendor/jqvmap/maps/jquery.vmap.world.js"/>
+	<h:outputScript 
+		name="vendor/jqvmap/maps/continents/jquery.vmap.africa.js"/>
+	<h:outputScript  name="vendor/jqvmap/maps/continents/jquery.vmap.asia.js"/>
+	<h:outputScript 
+		name="vendor/jqvmap/maps/continents/jquery.vmap.australia.js"/>
+	<h:outputScript 
+		name="vendor/jqvmap/maps/continents/jquery.vmap.europe.js"/>
+	<h:outputScript 
+		name="vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"/>
+	<h:outputScript 
+		name="vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"/>
+
+	<!-- Theme Base, Components and Settings -->
+	<h:outputScript  name="javascripts/theme.js"/>
+
+	<!-- Theme Custom -->
+	<h:outputScript  name="javascripts/theme.custom.js"/>
+
+	<!-- Theme Initialization Files -->
+	<h:outputScript  name="javascripts/theme.init.js"/>
+	<!-- Analytics to Track Preview Website -->
+	<h:outputScript  >		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)		  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');		  ga('create', 'UA-42715764-8', 'auto');		  ga('send', 'pageview');		</h:outputScript>
+
+	<!-- Examples -->
+	<h:outputScript  name="javascripts/dashboard/examples.dashboard.js"/>
+	<!-- Specific Page Vendor -->		
+	    <h:outputScript  name="vendor/select2/select2.js"/>
+		<h:outputScript  name="vendor/jquery-datatables/media/js/jquery.dataTables.js"/>	
+		<h:outputScript   name="vendor/jquery-datatables-bs3/assets/js/datatables.js"/>
+	<h:outputScript name="javascripts/tables/examples.datatables.editable.js"/>		
+		
+		
+		
+		
+
+</html>
